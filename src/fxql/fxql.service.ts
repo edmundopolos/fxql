@@ -64,6 +64,9 @@ export class FxqlService {
                 
         } });
         }
+        if (results.length > 1000) {
+             throw new Error(`Entry limit per request is 1000.`);
+        }
 
         return results;
     }
