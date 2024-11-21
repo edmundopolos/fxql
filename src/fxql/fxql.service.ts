@@ -113,7 +113,7 @@ export class FxqlService {
         status: HttpStatus.OK,
         message: "FXQL Statement Parsed Successfully.",
         data: savedData,
-        error: ""
+
     };
   }
 
